@@ -3,8 +3,6 @@ name: On Release - Sprint-00
 on:
   push:
     branches: [ main ]
-  # release:
-  #   types: [published]
 
 
 env:
@@ -12,7 +10,7 @@ env:
 
 jobs:
   docker-publish-sprint-00:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Build & Push - Sprint-00
