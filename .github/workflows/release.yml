@@ -1,8 +1,11 @@
 name: On Release - Sprint-00
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - "main"
+  # release:
+  #   types: [published]
 
 
 env:
